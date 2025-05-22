@@ -13,8 +13,7 @@ crl.apple.com = 0.0.0.0
 certs.apple.com = 0.0.0.0
 appattest.apple.com = 0.0.0.0
 vpp.itunes.apple.com = 0.0.0.0
-mesu.apple.com = 0.0.0.0  # 屏蔽系统更新检测:cite[2]:cite[6]
-
+mesu.apple.com = 0.0.0.0
 [Rule]
 # 拦截所有与苹果证书验证相关的域名
 DOMAIN,ocsp.apple.com,REJECT  
@@ -24,7 +23,4 @@ DOMAIN,crl.apple.com,REJECT
 DOMAIN,certs.apple.com,REJECT  
 DOMAIN,appattest.apple.com,REJECT  
 DOMAIN,vpp.itunes.apple.com,REJECT  
-DOMAIN,crl.entrust.net,REJECT  # 扩展屏蔽第三方证书验证:cite[2]:cite[4]
-
-# 其他通用规则（可选）
-FINAL,DIRECT
+DOMAIN,crl.entrust.net,REJECT
