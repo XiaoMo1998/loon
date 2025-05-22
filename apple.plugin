@@ -14,6 +14,7 @@ certs.apple.com = 0.0.0.0
 appattest.apple.com = 0.0.0.0
 vpp.itunes.apple.com = 0.0.0.0
 mesu.apple.com = 0.0.0.0
+
 [Rule]
 # 拦截所有与苹果证书验证相关的域名
 DOMAIN,ocsp.apple.com,REJECT  
